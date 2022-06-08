@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Auth0.AspNetCore.Authentication" Version="1.0.1" />
+    <PackageReference Include="Auth0.Core" Version="7.15.0" />
+    <PackageReference Include="Auth0.ManagementApi" Version="7.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tracker.AuthenticationService.Auth0\Tracker.AuthenticationService.Auth0.csproj" />
+    <ProjectReference Include="..\Tracker.AuthenticationService.Data\Tracker.AuthenticationService.Data.csproj" />
+    <ProjectReference Include="..\Tracker.AuthenticationService.Dto\Tracker.AuthenticationService.Dto.csproj" />
+  </ItemGroup>
+
+</Project>
